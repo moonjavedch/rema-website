@@ -1,34 +1,100 @@
+import Link from "next/link";
 import Container from "./Container";
 
 export default function Footer() {
   return (
     <footer className="border-t border-black/10 py-16">
       <Container>
-        <div className="flex flex-col gap-8 md:flex-row md:justify-between">
+        <div className="flex flex-col gap-12 md:flex-row md:justify-between">
           <div>
-            <h3 className="text-xl font-bold">REMA</h3>
+            <h3 className="text-xl font-bold">
+              REMA
+            </h3>
+
             <p className="mt-2 text-sm text-zinc-600">
               Real Estate Marketing Agency
             </p>
+
+            <p className="mt-6 max-w-sm text-sm text-zinc-500">
+              Intelligent marketing systems, AI automation and lead
+              generation solutions built specifically for real estate
+              professionals.
+            </p>
           </div>
 
-          <div className="flex gap-10">
+          <div className="flex flex-wrap gap-12">
             <div>
-              <h4 className="font-semibold mb-3">Company</h4>
+              <h4 className="mb-3 font-semibold">
+                Company
+              </h4>
+
               <ul className="space-y-2 text-sm text-zinc-600">
-                <li>About</li>
-                <li>Services</li>
-                <li>Pricing</li>
-                <li>Contact</li>
+                <li>
+                  <Link href="/about">About</Link>
+                </li>
+
+                <li>
+                  <Link href="/services">Services</Link>
+                </li>
+
+                <li>
+                  <Link href="/pricing">Pricing</Link>
+                </li>
+
+                <li>
+                  <Link href="/contact">Contact</Link>
+                </li>
               </ul>
             </div>
 
             <div>
-              <h4 className="font-semibold mb-3">Resources</h4>
+              <h4 className="mb-3 font-semibold">
+                Resources
+              </h4>
+
               <ul className="space-y-2 text-sm text-zinc-600">
-                <li>How It Works</li>
-                <li>Case Studies</li>
-                <li>FAQs</li>
+                <li>
+                  <Link href="/how-it-works">
+                    How It Works
+                  </Link>
+                </li>
+
+                <li>
+                  <Link href="/faqs">
+                    FAQs
+                  </Link>
+                </li>
+                <li>
+  <Link href="/ai-assistant">
+    REMA AI
+  </Link>
+</li>
+
+<li>
+  <Link href="/book-call">
+    Book A Call
+  </Link>
+</li>
+              </ul>
+            </div>
+
+            <div>
+              <h4 className="mb-3 font-semibold">
+                Legal
+              </h4>
+
+              <ul className="space-y-2 text-sm text-zinc-600">
+                <li>
+                  <Link href="/privacy-policy">
+                    Privacy Policy
+                  </Link>
+                </li>
+
+                <li>
+                  <Link href="/terms-of-use">
+                    Terms of Use
+                  </Link>
+                </li>
               </ul>
             </div>
           </div>

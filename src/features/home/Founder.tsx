@@ -2,37 +2,91 @@ import Container from '@/components/layout/Container'
 
 export default function Founder() {
   return (
-    <section className="py-32">
+    <section
+      style={{
+        paddingTop: '180px',
+        paddingBottom: '180px',
+      }}
+    >
       <Container>
-        <div className="grid gap-16 lg:grid-cols-12">
-          <div className="lg:col-span-4">
-            <p className="text-sm uppercase tracking-[0.25em] text-zinc-500">
+
+        <div
+          style={{
+            display: 'grid',
+            gridTemplateColumns: '220px 1fr',
+            gap: '6rem',
+            alignItems: 'start',
+          }}
+        >
+          <div>
+            <p className="text-sm uppercase tracking-[0.3em] text-zinc-500">
               About REMA
             </p>
           </div>
 
-          <div className="lg:col-span-8">
-            <h2 className="text-4xl font-bold leading-tight md:text-6xl">
-              Helping real estate professionals grow through modern marketing,
+          <div>
+
+            <h2
+              className="max-w-6xl text-5xl md:text-7xl font-light leading-none"
+            >
+              Helping real estate professionals
+              <br />
+              grow through modern marketing,
+              <br />
               automation and intelligent systems.
             </h2>
 
-            <p className="mt-10 max-w-3xl text-xl leading-relaxed text-zinc-600">
-              REMA was founded to help serious agents and brokerages generate
-              more opportunities, improve lead quality and build scalable growth
-              systems. We combine strategic marketing, premium creative work and
-              AI-powered automation to create a complete client acquisition
-              ecosystem.
+            <p
+              className="max-w-3xl text-xl leading-relaxed text-zinc-600"
+              style={{
+                marginTop: '56px',
+              }}
+            >
+              Most agents don't have a lead problem.
+              They have a system problem.
             </p>
 
-            <div className="mt-10">
-              <p className="font-semibold">Steve</p>
-              <p className="text-zinc-500">
+            <p
+              className="max-w-3xl text-xl leading-relaxed text-zinc-600"
+              style={{
+                marginTop: '32px',
+              }}
+            >
+              REMA was built to solve that problem by combining
+              lead generation, branding, websites, advertising,
+              AI automation and CRM systems into one connected
+              growth engine designed specifically for real estate.
+            </p>
+
+            <p
+              className="max-w-3xl text-xl leading-relaxed text-zinc-600"
+              style={{
+                marginTop: '32px',
+              }}
+            >
+              Instead of juggling disconnected tools and vendors,
+              our clients operate with a unified system that
+              generates opportunities, follows up automatically
+              and helps convert more prospects into clients.
+            </p>
+
+            <div
+              style={{
+                marginTop: '64px',
+              }}
+            >
+              <p className="text-xl font-medium">
+                Steve
+              </p>
+
+              <p className="mt-2 text-zinc-500">
                 Founder & CEO, REMA
               </p>
             </div>
+
           </div>
         </div>
+
       </Container>
     </section>
   )

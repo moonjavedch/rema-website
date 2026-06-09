@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import Container from '@/components/layout/Container'
 
 export default function FinalCTA() {
@@ -19,9 +20,12 @@ export default function FinalCTA() {
             leads.
           </p>
 
-          <button className="mt-12 rounded-full border border-black px-8 py-4 transition hover:bg-black hover:text-white">
-            Book A Strategy Call
-          </button>
+         <Link
+  href="/book-call"
+  className="mt-12 inline-block rounded-full border border-black px-8 py-4 transition hover:bg-black hover:text-white"
+>
+  Book A Strategy Call
+</Link>
         </div>
       </Container>
     </section>
