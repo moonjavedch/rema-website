@@ -25,7 +25,7 @@ export default function PricingProposalPage() {
 
             <p className="mb-6 text-sm uppercase tracking-[0.25em] text-zinc-500">
 
-              Private Pricing Proposal
+              Pricing
 
             </p>
 
@@ -33,13 +33,13 @@ export default function PricingProposalPage() {
 
             <h1 className="max-w-6xl text-5xl md:text-7xl font-medium tracking-tight leading-none">
 
-              Choose the right growth system for your business.
+              Choose The Right Growth System For Your Business.
 
             </h1>
 
 
 
-            <p className="mt-auto max-w-3xl text-xl leading-relaxed text-zinc-600">
+            <p className="mt-10 max-w-3xl text-xl text-zinc-600">
 
               Transparent pricing designed for agents, teams and brokerages
 

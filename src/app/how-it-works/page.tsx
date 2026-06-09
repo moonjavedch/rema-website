@@ -17,8 +17,8 @@ export default function HowItWorksPage() {
               How It Works
             </p>
 
-            <h1 className="max-w-5xl text-6xl font-bold leading-tight md:text-8xl">
-              A complete lead generation system built for real estate growth.
+            <h1 className="max-w-5xl text-5xl md:text-7xl font-medium tracking-tight leading-none">
+              A Complete Lead Generation System Built For Real Estate Growth.
             </h1>
 
             <p className="mt-10 max-w-3xl text-xl text-zinc-600">

@@ -15,8 +15,8 @@ export default function ServicesPage() {
               Services
             </p>
 
-            <h1 className="max-w-5xl text-6xl font-bold md:text-8xl">
-              Complete growth systems for modern real estate businesses.
+            <h1 className="max-w-5xl text-5xl md:text-7xl font-medium tracking-tight leading-none">
+              The Complete Growth Engine For Modern Realtors And Agencies.
             </h1>
 
             <p className="mt-10 max-w-3xl text-xl text-zinc-600">
@@ -147,9 +147,9 @@ export default function ServicesPage() {
          <Container>
                     <div className="max-w-5xl">
                       <h2 className="text-5xl md:text-8xl font-semibold tracking-tight leading-none">
-                        Ready to stop guessing
+                        Ready to get consistent
                         <br />
-                        and start growing?
+                        real estate leads?
                       </h2>
         
                       <p
@@ -158,8 +158,9 @@ export default function ServicesPage() {
                           marginTop: '48px',
                         }}
                       >
-                        Build a smarter marketing system, generate more qualified leads,
-                        and automate your growth with REMA.
+                        Let REMA build your automated lead system. Stop chasing cold prospects and start closing deals.
+
+
                       </p>
         
                       <div

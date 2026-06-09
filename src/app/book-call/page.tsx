@@ -7,7 +7,7 @@ export default function BookCallPage() {
     <>
       <Navbar />
 
-      <main style={{ paddingTop: '140px' }}>
+      <main style={{ paddingTop: '40px' }}>
         <section className="py-24">
           <Container>
             <p className="mb-6 text-sm uppercase tracking-[0.3em] text-zinc-500">
