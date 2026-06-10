@@ -14,41 +14,28 @@ export default function TermsOfUsePage() {
           width: '100%',
         }}
       >
-        <section
-          style={{
-            paddingBottom: '100px',
-            borderBottom: '1px solid rgba(0,0,0,0.1)',
-          }}
-        >
+        <section className="border-b border-black/10 pb-20 md:pb-24">
           <Container>
             <p className="mb-6 text-sm uppercase tracking-[0.3em] text-zinc-500">
               Legal
             </p>
 
-            <h1 className="text-6xl md:text-8xl font-semibold tracking-tight leading-none">
+           <h1 className="text-5xl md:text-7xl lg:text-8xl font-semibold tracking-tight leading-none">
               Terms Of Use
             </h1>
 
-            <p
-              className="text-zinc-600"
-              style={{ marginTop: '40px' }}
-            >
+            <p className="mt-10 text-zinc-600">
               Last Updated: January 2026
             </p>
           </Container>
         </section>
 
-        <section
-          style={{
-            paddingTop: '100px',
-            paddingBottom: '160px',
-          }}
-        >
+        <section className="py-20 md:py-32">
           <Container>
             <div className="max-w-4xl space-y-16">
 
               <div>
-                <h2 className="text-3xl mb-4">
+                <h2 className="mb-4 text-2xl md:text-3xl font-medium tracking-tight">
                   Acceptance Of Terms
                 </h2>
 
@@ -59,7 +46,7 @@ export default function TermsOfUsePage() {
               </div>
 
               <div>
-                <h2 className="text-3xl mb-4">
+                <h2 className="mb-4 text-2xl md:text-3xl font-medium tracking-tight">
                   Services
                 </h2>
 
@@ -72,7 +59,7 @@ export default function TermsOfUsePage() {
               </div>
 
               <div>
-                <h2 className="text-3xl mb-4">
+                <h2 className="mb-4 text-2xl md:text-3xl font-medium tracking-tight">
                   Intellectual Property
                 </h2>
 
@@ -84,7 +71,7 @@ export default function TermsOfUsePage() {
               </div>
 
               <div>
-                <h2 className="text-3xl mb-4">
+                <h2 className="mb-4 text-2xl md:text-3xl font-medium tracking-tight">
                   User Responsibilities
                 </h2>
 
@@ -96,7 +83,7 @@ export default function TermsOfUsePage() {
               </div>
 
               <div>
-                <h2 className="text-3xl mb-4">
+                <h2 className="mb-4 text-2xl md:text-3xl font-medium tracking-tight">
                   Limitation Of Liability
                 </h2>
 
@@ -108,7 +95,7 @@ export default function TermsOfUsePage() {
               </div>
 
               <div>
-                <h2 className="text-3xl mb-4">
+                <h2 className="mb-4 text-2xl md:text-3xl font-medium tracking-tight">
                   Modifications
                 </h2>
 
@@ -120,7 +107,7 @@ export default function TermsOfUsePage() {
               </div>
 
               <div>
-                <h2 className="text-3xl mb-4">
+                <h2 className="mb-4 text-2xl md:text-3xl font-medium tracking-tight">
                   Contact Information
                 </h2>
 

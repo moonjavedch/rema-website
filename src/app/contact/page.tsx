@@ -16,12 +16,7 @@ return (
   }}
 >
 
-    <section
-  style={{
-    paddingBottom: '100px',
-    borderBottom: '1px solid rgba(0,0,0,0.1)',
-  }}
->
+   <section className="border-b border-black/10 pb-20 md:pb-24">
   <Container>
     <p className="mb-6 text-sm uppercase tracking-[0.3em] text-zinc-500">
       Contact REMA
@@ -35,12 +30,7 @@ return (
       System Together.
     </h1>
 
-    <p
-      className="max-w-3xl text-xl leading-relaxed text-zinc-600"
-      style={{
-        marginTop: '80px',
-      }}
-    >
+    <p className="mt-8 md:mt-12 max-w-3xl text-lg md:text-xl leading-relaxed text-zinc-600">
       Ready to generate more qualified leads and close more deals?
       Speak with our team or our AI assistant today.
     </p>
@@ -49,15 +39,15 @@ return (
   </Container>
 </section>
 
-    <section className="py-32 border-b border-black/10">
+    <section className="border-b border-black/10 py-20 md:py-28">
       <Container>
-        <div className="grid gap-16 lg:grid-cols-[1.2fr_1fr]">
+       <div className="grid gap-12 md:gap-16 lg:grid-cols-[1.2fr_1fr]">
           <div>
             <p className="mb-6 text-sm uppercase tracking-[0.3em] text-zinc-500">
               Send Us A Message
             </p>
 
-            <h2 className="text-5xl md:text-7xl font-light mb-12">
+          <h2 className="mb-10 md:mb-12 text-4xl md:text-6xl lg:text-7xl font-light leading-none">
               Tell us about your goals.
             </h2>
 
@@ -65,28 +55,28 @@ return (
               <input
                 type="text"
                 placeholder="Full Name"
-                className="w-full rounded-xl border border-black/10 bg-white px-5 py-4 outline-none"
+                className="w-full rounded-xl border border-black/10 bg-white px-4 md:px-5 py-4 outline-none"
               />
 
               <input
                 type="email"
                 placeholder="Email Address"
-                className="w-full rounded-xl border border-black/10 bg-white px-5 py-4 outline-none"
+                className="w-full rounded-xl border border-black/10 bg-white px-4 md:px-5 py-4 outline-none"
               />
 
               <input
                 type="text"
                 placeholder="Phone Number (WhatsApp Preferred)"
-                className="w-full rounded-xl border border-black/10 bg-white px-5 py-4 outline-none"
+                className="w-full rounded-xl border border-black/10 bg-white px-4 md:px-5 py-4 outline-none"
               />
 
               <input
                 type="text"
                 placeholder="Company / Brokerage Name"
-                className="w-full rounded-xl border border-black/10 bg-white px-5 py-4 outline-none"
+                className="w-full rounded-xl border border-black/10 bg-white px-4 md:px-5 py-4 outline-none"
               />
 
-              <select className="w-full rounded-xl border border-black/10 bg-white px-5 py-4 outline-none">
+              <select className="w-full rounded-xl border border-black/10 bg-white px-4 md:px-5 py-4 outline-none">
                 <option>Service Interested In</option>
                 <option>Full Lead Generation System</option>
                 <option>AI Chatbots & Automation</option>
@@ -99,15 +89,11 @@ return (
               <textarea
                 rows={6}
                 placeholder="Project Details / Message"
-                className="w-full rounded-xl border border-black/10 bg-white px-5 py-4 outline-none"
+                className="w-full rounded-xl border border-black/10 bg-white px-4 md:px-5 py-4 outline-none"
               />
 
               <button
-  className="rounded-full bg-black font-medium text-white"
-  style={{
-    padding: '18px 40px',
-    marginTop: '12px',
-  }}
+ className="rounded-full bg-black px-6 md:px-10 py-4 font-medium text-white transition hover:opacity-90"
 >
   Send Message
 </button>
@@ -119,7 +105,7 @@ return (
               Instant Help
             </p>
 
-           <div className="rounded-3xl border border-black/10 p-10">
+           <div className="rounded-3xl border border-black/10 p-6 md:p-10">
               <div className="mb-8 flex items-center gap-4">
                 <div className="h-12 w-12 rounded-full bg-black" />
 
@@ -137,7 +123,7 @@ return (
                   real estate business today?
                 </div>
 
-                <div className="flex flex-wrap gap-3">
+               <div className="flex flex-wrap gap-2 md:gap-3">
                  <Link
   href="/services"
   className="rounded-full border px-4 py-2 transition hover:bg-black hover:text-white"
@@ -178,15 +164,15 @@ return (
       </Container>
     </section>
 
-    <section className="py-32 border-b border-black/10">
+    <section className="border-b border-black/10 py-20 md:py-28">
       <Container>
-        <h2 className="text-5xl md:text-7xl font-light mb-16">
+       <h2 className="mb-12 md:mb-16 text-4xl md:text-6xl lg:text-7xl font-light leading-none">
           Our Locations
         </h2>
 
         <div className="grid gap-16 md:grid-cols-2">
           <div>
-            <h3 className="text-3xl mb-6">
+            <h3 className="mb-6 text-2xl md:text-3xl font-medium tracking-tight">
               Canada (Head Office)
             </h3>
 
@@ -202,7 +188,7 @@ return (
           </div>
 
           <div>
-            <h3 className="text-3xl mb-6">
+            <h3 className="mb-6 text-2xl md:text-3xl font-medium tracking-tight">
               United States
             </h3>
 
@@ -218,44 +204,35 @@ return (
       </Container>
     </section>
 
-    <section className="py-32 border-b border-black/10">
+    <section className="border-b border-black/10 py-20 md:py-28">
       <Container>
-  <h2 className="text-5xl md:text-7xl font-light mb-12">
+<h2 className="mb-10 md:mb-12 text-4xl md:text-6xl lg:text-7xl font-light leading-none">
     Additional Contact Options
   </h2>
 
   <div
-    className="flex flex-wrap items-center"
+    className="flex flex-wrap items-center gap-4 md:gap-6"
     style={{
       gap: '24px',
     }}
   >
    <Link
   href="/book-call"
-  className="rounded-full bg-black font-medium text-white transition hover:opacity-90"
-  style={{
-    padding: '18px 40px',
-  }}
+  className="rounded-full bg-black px-6 md:px-10 py-4 font-medium text-white transition hover:opacity-90"
 >
   Book Strategy Call
 </Link>
 
 <Link
   href="https://wa.me/16475550189"
-  className="rounded-full border border-black font-medium transition hover:bg-black hover:text-white"
-  style={{
-    padding: '18px 40px',
-  }}
+  className="rounded-full border border-black px-6 md:px-10 py-4 font-medium transition hover:bg-black hover:text-white"
 >
   WhatsApp Business
 </Link>
 
 <Link
   href="mailto:hello@rema.ca"
-  className="rounded-full border border-black font-medium transition hover:bg-black hover:text-white"
-  style={{
-    padding: '18px 40px',
-  }}
+ className="rounded-full border border-black px-6 md:px-10 py-4 font-medium transition hover:bg-black hover:text-white"
 >
   Email Us
 </Link>
@@ -272,12 +249,7 @@ return (
 </Container>
     </section>
 
-  <section
-  style={{
-    paddingTop: '120px',
-    paddingBottom: '160px',
-  }}
->
+<section className="py-20 md:py-32">
      <Container>
   <div className="max-w-5xl">
     <h2 className="text-5xl md:text-8xl font-semibold tracking-tight leading-none">
@@ -305,20 +277,14 @@ return (
     >
        <Link
   href="/contact"
-  className="rounded-full bg-black font-medium text-white"
-  style={{
-    padding: '18px 40px',
-  }}
+  className="rounded-full bg-black px-6 md:px-10 py-4 font-medium text-white transition hover:opacity-90"
 >
   Get Your Free Lead Audit
 </Link>
 
 <Link
   href="/ai-assistant"
-  className="rounded-full border border-black font-medium transition hover:bg-black hover:text-white"
-  style={{
-    padding: '18px 40px',
-  }}
+ className="rounded-full border border-black px-6 md:px-10 py-4 font-medium transition hover:bg-black hover:text-white"
 >
   Talk To REMA AI
 </Link>

@@ -48,7 +48,7 @@ export default function FeaturedWork() {
               className="group overflow-hidden rounded-[32px] border border-black/10 bg-white"
             >
               <div className="grid md:grid-cols-2">
-                <div className="flex min-h-[380px] items-center justify-center border-b border-black/10 md:border-b-0 md:border-r">
+                <div className="flex min-h-[220px] md:min-h-[380px] items-center justify-center border-b border-black/10 md:border-b-0 md:border-r px-6">
                   <div className="text-center">
                     <p className="text-sm uppercase tracking-[0.25em] text-zinc-500">
                       Visual Placeholder
@@ -60,16 +60,16 @@ export default function FeaturedWork() {
                   </div>
                 </div>
 
-                <div className="flex flex-col justify-center p-10 md:p-16">
+                <div className="flex flex-col justify-center p-6 md:p-16">
                   <span className="text-sm uppercase tracking-[0.25em] text-zinc-500">
                     {project.category}
                   </span>
 
-                  <h3 className="mt-4 text-3xl font-bold md:text-5xl">
+                 <h3 className="mt-4 text-2xl font-bold leading-tight md:text-5xl">
                     {project.title}
                   </h3>
 
-                  <div className="mt-8 text-7xl font-bold text-zinc-200">
+                  <div className="mt-8 text-5xl font-bold text-zinc-200 md:text-7xl">
                     0{index + 1}
                   </div>
                 </div>

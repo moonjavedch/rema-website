@@ -41,12 +41,7 @@ const services = [
 
 export default function Services() {
   return (
-    <section
-      style={{
-        paddingTop: '160px',
-        paddingBottom: '160px',
-      }}
-    >
+    <section className="py-20 md:py-28 lg:py-40">
       <Container>
 
         <div className="max-w-5xl">
@@ -61,50 +56,24 @@ export default function Services() {
           </h2>
         </div>
 
-        <div style={{ marginTop: '120px' }}>
+       <div className="mt-16 md:mt-24 lg:mt-[120px]">
           {services.map((service) => (
-            <div
-              key={service.number}
-              style={{
-                paddingTop: '64px',
-                paddingBottom: '64px',
-                borderTop: '1px solid rgba(0,0,0,0.08)',
-              }}
-            >
-              <div
-                style={{
-                  display: 'grid',
-                  gridTemplateColumns: '180px 1.2fr 1fr',
-                  gap: '4rem',
-                  alignItems: 'start',
-                }}
-              >
+           <div className="border-t border-black/10 py-10 md:py-14 lg:py-16">
+              <div className="grid gap-8 md:gap-10 lg:grid-cols-[180px_1.2fr_1fr] lg:gap-16">
                 <div>
-                  <span
-                    style={{
-                      fontSize: '3rem',
-                      fontWeight: 300,
-                      color: '#a1a1aa',
-                    }}
-                  >
+                 <span className="text-4xl md:text-5xl font-light text-zinc-400">
                     {service.number}
                   </span>
                 </div>
 
                 <div>
-                  <h3
-                    style={{
-                      fontSize: '2.5rem',
-                      lineHeight: 1.05,
-                      fontWeight: 500,
-                    }}
-                  >
+                 <h3 className="text-3xl md:text-4xl leading-tight font-medium">
                     {service.title}
                   </h3>
                 </div>
 
                 <div>
-                  <p className="max-w-xl text-xl leading-relaxed text-zinc-600">
+                  <p className="max-w-xl text-lg md:text-xl leading-relaxed text-zinc-600">
                     {service.description}
                   </p>
                 </div>

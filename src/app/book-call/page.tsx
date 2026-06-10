@@ -7,14 +7,14 @@ export default function BookCallPage() {
     <>
       <Navbar />
 
-      <main style={{ paddingTop: '40px' }}>
-        <section className="py-24">
+    <main className="pt-24 md:pt-32">
+       <section className="py-20 md:py-28">
           <Container>
             <p className="mb-6 text-sm uppercase tracking-[0.3em] text-zinc-500">
               Strategy Call
             </p>
 
-            <h1 className="text-5xl md:text-7xl font-medium tracking-tight leading-none">
+           <h1 className="text-5xl md:text-6xl lg:text-7xl font-medium tracking-tight leading-none">
               Book Your
               <br />
               Free Strategy Call.
@@ -24,8 +24,8 @@ export default function BookCallPage() {
               Calendly scheduling will be connected during Phase 2.
             </p>
 
-            <div className="mt-16 rounded-3xl border border-black/10 p-12">
-              <h2 className="text-3xl font-medium">
+            <div className="mt-12 md:mt-16 rounded-3xl border border-black/10 p-6 md:p-12">
+             <h2 className="text-2xl md:text-3xl font-medium tracking-tight">
                 Scheduling Widget Placeholder
               </h2>
 

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import Container from "./Container";
 
 export default function Footer() {
@@ -7,14 +8,20 @@ export default function Footer() {
       <Container>
         <div className="flex flex-col gap-12 md:flex-row md:justify-between">
           <div>
-            <h3 className="text-xl font-bold">
-              REMA
-            </h3>
+           <Link href="/">
+  <Image
+    src="/images/rema-logo-black.png"
+    alt="REMA"
+    width={130}
+    height={49}
+    className="h-auto w-[140px] md:w-[160px]"
+    priority
+  />
+</Link>
 
-            <p className="mt-2 text-sm text-zinc-600">
-              Real Estate Marketing Agency
-            </p>
-
+<p className="mt-4 text-sm text-zinc-600">
+  Real Estate Marketing Agency
+</p>
             <p className="mt-6 max-w-sm text-sm text-zinc-500">
               Intelligent marketing systems, AI automation and lead
               generation solutions built specifically for real estate

@@ -13,17 +13,17 @@ const brands = [
 
 export default function TrustedBy() {
   return (
-    <section className="border-t border-black/10 py-10 overflow-hidden">
+    <section className="overflow-hidden border-t border-black/10 py-10 md:py-14">
       <Container>
-        <p className="mb-10 text-center text-sm uppercase tracking-[0.25em] text-zinc-500">
+        <p className="mb-8 text-center text-xs uppercase tracking-[0.25em] text-zinc-500 md:mb-10 md:text-sm">
           Trusted By Real Estate Professionals
         </p>
 
-        <div className="flex flex-wrap items-center justify-center gap-10 md:gap-16">
+        <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-6 md:gap-x-16 md:gap-y-8">
           {brands.map((brand) => (
             <div
               key={brand}
-              className="text-lg font-medium text-zinc-400"
+              className="text-base font-medium text-zinc-400 md:text-lg"
             >
               {brand}
             </div>

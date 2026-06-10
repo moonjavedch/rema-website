@@ -15,12 +15,7 @@ export default function FAQsPage() {
           width: '100%',
         }}
       >
-        <section
-          style={{
-            paddingBottom: '100px',
-            borderBottom: '1px solid rgba(0,0,0,0.1)',
-          }}
-        >
+        <section className="border-b border-black/10 pb-20 md:pb-24">
           <Container>
             <p className="mb-6 text-sm uppercase tracking-[0.3em] text-zinc-500">
               Frequently Asked Questions
@@ -58,7 +53,7 @@ export default function FAQsPage() {
 
             <div className="space-y-20">
               <div>
-                <h3 className="mb-10 text-3xl font-medium">
+                <h3 className="mb-8 md:mb-10 text-2xl md:text-3xl font-medium tracking-tight">
                   General Questions
                 </h3>
 
@@ -101,7 +96,7 @@ export default function FAQsPage() {
               </div>
 
               <div>
-                <h3 className="mb-10 text-3xl font-medium">
+                <h3 className="mb-8 md:mb-10 text-2xl md:text-3xl font-medium tracking-tight">
                   Services & Process
                 </h3>
 
@@ -142,7 +137,7 @@ export default function FAQsPage() {
               </div>
 
               <div>
-                <h3 className="mb-10 text-3xl font-medium">
+                <h3 className="mb-8 md:mb-10 text-2xl md:text-3xl font-medium tracking-tight">
                   AI & Technology
                 </h3>
 
@@ -172,7 +167,7 @@ export default function FAQsPage() {
               </div>
 
               <div>
-                <h3 className="mb-10 text-3xl font-medium">
+                <h3 className="mb-8 md:mb-10 text-2xl md:text-3xl font-medium tracking-tight">
                   Pricing & Investment
                 </h3>
 
@@ -202,7 +197,7 @@ export default function FAQsPage() {
               </div>
 
               <div>
-                <h3 className="mb-10 text-3xl font-medium">
+                <h3 className="mb-8 md:mb-10 text-2xl md:text-3xl font-medium tracking-tight">
                   Results & Support
                 </h3>
 

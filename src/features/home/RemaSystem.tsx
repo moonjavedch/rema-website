@@ -117,32 +117,15 @@ export default function RemaSystem() {
           </p>
         </div>
 
-        <div style={{ marginTop: '120px' }}>
+        <div className="mt-20 md:mt-28 lg:mt-[120px]">
           {systemSteps.map((step) => (
             <div
               key={step.number}
-              style={{
-                paddingTop: '80px',
-                paddingBottom: '80px',
-                borderTop: '1px solid rgba(0,0,0,0.08)',
-              }}
+              className="border-t border-black/10 py-12 md:py-16 lg:py-20"
             >
-              <div
-                style={{
-                  display: 'grid',
-                  gridTemplateColumns: '220px 1fr 1.5fr',
-                  gap: '4rem',
-                  alignItems: 'start',
-                }}
-              >
+             <div className="grid gap-8 md:gap-12 lg:grid-cols-[220px_1fr_1.5fr]">
                 <div>
-                  <div
-                    style={{
-                      fontSize: '5rem',
-                      lineHeight: 1,
-                      fontWeight: 300,
-                    }}
-                  >
+                  <div className="text-5xl md:text-6xl lg:text-[5rem] leading-none font-light">
                     {step.number}
                   </div>
                 </div>
@@ -165,7 +148,7 @@ export default function RemaSystem() {
                 </div>
 
                 <div>
-                  <p className="max-w-xl text-xl leading-relaxed text-zinc-600">
+                  <p className="max-w-xl text-lg md:text-xl leading-relaxed text-zinc-600">
                     {step.description}
                   </p>
                 </div>
@@ -175,11 +158,7 @@ export default function RemaSystem() {
         </div>
 
         <div
-          style={{
-            marginTop: '120px',
-            paddingTop: '80px',
-            borderTop: '1px solid rgba(0,0,0,0.08)',
-          }}
+          className="mt-20 border-t border-black/10 pt-12 md:mt-28 md:pt-16 lg:mt-[120px] lg:pt-20"
         >
           <div className="max-w-5xl">
             <h3 className="text-5xl md:text-7xl font-light leading-none">

@@ -12,13 +12,13 @@ export default function AboutPage() {
       <main style={{ paddingTop: '140px', display: 'block', width: '100%' }}>
         
         {/* Top Intro Section */}
-        <section style={{ paddingBottom: '80px', borderBottom: '1px solid rgba(0,0,0,0.1)' }}>
+        <section className="border-b border-black/10 pb-20 md:pb-24">
           <Container>
             <p className="mb-6 text-sm uppercase tracking-[0.3em] text-zinc-500">
               About REMA
             </p>
 
-            <h1 className="max-w-6xl text-5xl md:text-7xl font-medium tracking-tight leading-none">
+          <h1 className="max-w-6xl text-5xl md:text-7xl font-medium tracking-tight leading-none">
               Your Strategic
               <br />
               Real Estate
@@ -26,7 +26,7 @@ export default function AboutPage() {
               Growth Partner.
             </h1>
 
-            <p className="mt-10 max-w-3xl text-xl text-zinc-600">
+            <p className="mt-8 md:mt-10 max-w-3xl text-lg md:text-xl leading-relaxed text-zinc-600">
               We help real estate professionals across Canada, the United States,
               the United Kingdom and Europe generate consistent opportunities
               through intelligent marketing systems and AI automation.
@@ -35,18 +35,18 @@ export default function AboutPage() {
         </section>
 
         {/* Our Story Section */}
-        <section style={{ paddingTop: '100px', paddingBottom: '100px', borderBottom: '1px solid rgba(0,0,0,0.1)' }}>
+<section className="border-b border-black/10 py-20 md:py-28">
           <Container>
             <div className="max-w-4xl">
               <p className="mb-6 text-sm uppercase tracking-[0.3em] text-zinc-500">
                 Our Story
               </p>
 
-              <h2 className="text-5xl md:text-7xl font-light mb-10">
+              <h2 className="mb-8 md:mb-10 text-4xl md:text-6xl lg:text-7xl font-light leading-none">
                 Built to solve the biggest growth challenges in real estate.
               </h2>
 
-              <p className="text-xl leading-relaxed text-zinc-600">
+             <p className="text-lg md:text-xl leading-relaxed text-zinc-600">
                 REMA was founded with a clear mission: helping real estate
                 professionals overcome inconsistent lead flow, wasted advertising
                 budgets, slow follow-up systems and fragmented marketing efforts.
@@ -59,9 +59,9 @@ export default function AboutPage() {
         </section>
 
         {/* Leadership Section */}
-        <section style={{ paddingTop: '100px', paddingBottom: '100px', borderBottom: '1px solid rgba(0,0,0,0.1)' }}>
+       <section className="border-b border-black/10 py-20 md:py-28">
           <Container>
-           <div className="grid gap-16 lg:grid-cols-[1fr_1.5fr]">
+           <div className="grid gap-10 md:gap-16 lg:grid-cols-[1fr_1.5fr]">
               <div>
                 <div className="aspect-[4/5] rounded-3xl border border-black/10 bg-zinc-100" />
               </div>
@@ -71,11 +71,11 @@ export default function AboutPage() {
                   Leadership
                 </p>
 
-                <h2 className="text-5xl md:text-7xl font-light mb-8">
+                <h2 className="mb-8 text-4xl md:text-6xl lg:text-7xl font-light leading-none">
                   Meet Steve.
                 </h2>
 
-                <p className="text-xl leading-relaxed text-zinc-600 mb-8">
+              <p className="mb-8 text-lg md:text-xl leading-relaxed text-zinc-600">
                   Steve leads REMA's vision of combining real estate marketing
                   expertise with intelligent automation. His focus is helping
                   agents and brokerages spend less time chasing leads and more
@@ -93,13 +93,13 @@ export default function AboutPage() {
         </section>
 
         {/* Mission & Values Section */}
-        <section style={{ paddingTop: '100px', paddingBottom: '100px', borderBottom: '1px solid rgba(0,0,0,0.1)' }}>
+        <section className="border-b border-black/10 py-20 md:py-28">
           <Container>
             <p className="mb-6 text-sm uppercase tracking-[0.3em] text-zinc-500">
               Mission & Values
             </p>
 
-            <h2 className="text-5xl md:text-7xl font-light mb-20">
+<h2 className="mb-14 md:mb-20 text-4xl md:text-6xl lg:text-7xl font-light leading-none">
               Growth through
               <br />
               intelligence.
@@ -109,42 +109,42 @@ export default function AboutPage() {
               className="grid gap-8 md:grid-cols-2 lg:grid-cols-3"
             >
               <div>
-                <h3 className="text-2xl mb-4">Canada-First Expertise</h3>
+                <h3 className="mb-4 text-xl md:text-2xl font-medium tracking-tight">Canada-First Expertise</h3>
                 <p className="text-zinc-600">
                   Deep understanding of Canadian real estate with global standards.
                 </p>
               </div>
 
               <div>
-                <h3 className="text-2xl mb-4">Results-Driven Innovation</h3>
+                <h3 className="mb-4 text-xl md:text-2xl font-medium tracking-tight">Results-Driven Innovation</h3>
                 <p className="text-zinc-600">
                   Marketing strategy powered by modern AI systems.
                 </p>
               </div>
 
               <div>
-                <h3 className="text-2xl mb-4">Transparency</h3>
+                <h3 className="mb-4 text-xl md:text-2xl font-medium tracking-tight">Transparency</h3>
                 <p className="text-zinc-600">
                   Clear communication, reporting and accountability.
                 </p>
               </div>
 
               <div>
-                <h3 className="text-2xl mb-4">Client Success</h3>
+                <h3 className="mb-4 text-xl md:text-2xl font-medium tracking-tight">Client Success</h3>
                 <p className="text-zinc-600">
                   Every decision begins with client outcomes.
                 </p>
               </div>
 
               <div>
-                <h3 className="text-2xl mb-4">Continuous Optimization</h3>
+                <h3 className="mb-4 text-xl md:text-2xl font-medium tracking-tight">Continuous Optimization</h3>
                 <p className="text-zinc-600">
                   Always improving systems, campaigns and automation.
                 </p>
               </div>
 
               <div>
-                <h3 className="text-2xl mb-4">Long-Term Growth</h3>
+                <h3 className="mb-4 text-xl md:text-2xl font-medium tracking-tight">Long-Term Growth</h3>
                 <p className="text-zinc-600">
                   Building sustainable systems rather than short-term tactics.
                 </p>
@@ -154,13 +154,13 @@ export default function AboutPage() {
         </section>
 
         {/* Global Reach Section */}
-        <section style={{ paddingTop: '100px', paddingBottom: '100px', borderBottom: '1px solid rgba(0,0,0,0.1)' }}>
+       <section className="border-b border-black/10 py-20 md:py-28">
           <Container>
             <p className="mb-6 text-sm uppercase tracking-[0.3em] text-zinc-500">
               Global Reach
             </p>
 
-            <h2 className="text-5xl md:text-7xl font-light mb-10">
+            <h2 className="mb-8 md:mb-10 text-4xl md:text-6xl lg:text-7xl font-light leading-none">
               Serving real estate
               <br />
               professionals worldwide.
@@ -171,12 +171,12 @@ export default function AboutPage() {
               the United States, the United Kingdom and expanding across Europe.
             </p>
 
-           <div className="mt-16 h-[320px] md:h-[500px] rounded-3xl bg-zinc-100" />
+<div className="mt-12 md:mt-16 h-[240px] md:h-[420px] lg:h-[500px] rounded-3xl bg-zinc-100" />
           </Container>
         </section>
 
         {/* Final CTA Section - Fixed margin-bottom forces layout separation from Footer */}
-        <section style={{ paddingTop: '120px', paddingBottom: '160px' }}>
+     <section className="py-20 md:py-32">
 <Container>
   <div className="max-w-5xl">
     <h2 className="text-5xl md:text-8xl font-semibold tracking-tight leading-none">

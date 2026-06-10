@@ -14,19 +14,13 @@ export default function PrivacyPolicyPage() {
           width: '100%',
         }}
       >
-        <section
-          style={{
-            paddingBottom: '80px',
-            borderBottom: '1px solid rgba(0,0,0,0.1)',
-          }}
-        >
+        <section className="border-b border-black/10 pb-16 md:pb-20">
           <Container>
             <p className="mb-6 text-sm uppercase tracking-[0.3em] text-zinc-500">
               Legal
             </p>
 
-            <h1 className="max-w-6xl text-6xl md:text-8xl font-semibold tracking-tight leading-none">
-              Privacy Policy
+            <h1 className="max-w-6xl text-5xl md:text-7xl lg:text-8xl font-semibold tracking-tight leading-none">
             </h1>
 
             <p
@@ -40,17 +34,12 @@ export default function PrivacyPolicyPage() {
           </Container>
         </section>
 
-        <section
-          style={{
-            paddingTop: '100px',
-            paddingBottom: '140px',
-          }}
-        >
+        <section className="py-20 md:py-28">
           <Container>
             <div className="max-w-4xl space-y-16">
 
               <div>
-                <h2 className="text-3xl mb-4">
+                <h2 className="mb-4 text-2xl md:text-3xl font-medium tracking-tight">
                   Introduction
                 </h2>
 
@@ -64,7 +53,7 @@ export default function PrivacyPolicyPage() {
               </div>
 
               <div>
-                <h2 className="text-3xl mb-4">
+                <h2 className="mb-4 text-2xl md:text-3xl font-medium tracking-tight">
                   Information We Collect
                 </h2>
 
@@ -77,7 +66,7 @@ export default function PrivacyPolicyPage() {
               </div>
 
               <div>
-                <h2 className="text-3xl mb-4">
+                <h2 className="mb-4 text-2xl md:text-3xl font-medium tracking-tight">
                   How We Use Information
                 </h2>
 
@@ -89,7 +78,7 @@ export default function PrivacyPolicyPage() {
               </div>
 
               <div>
-                <h2 className="text-3xl mb-4">
+                <h2 className="mb-4 text-2xl md:text-3xl font-medium tracking-tight">
                   Cookies & Analytics
                 </h2>
 
@@ -101,7 +90,7 @@ export default function PrivacyPolicyPage() {
               </div>
 
               <div>
-                <h2 className="text-3xl mb-4">
+                <h2 className="mb-4 text-2xl md:text-3xl font-medium tracking-tight">
                   Data Protection
                 </h2>
 
@@ -113,7 +102,7 @@ export default function PrivacyPolicyPage() {
               </div>
 
               <div>
-                <h2 className="text-3xl mb-4">
+                <h2 className="mb-4 text-2xl md:text-3xl font-medium tracking-tight">
                   Third-Party Services
                 </h2>
 
@@ -126,7 +115,7 @@ export default function PrivacyPolicyPage() {
               </div>
 
               <div>
-                <h2 className="text-3xl mb-4">
+                <h2 className="mb-4 text-2xl md:text-3xl font-medium tracking-tight">
                   Contact Us
                 </h2>
 

@@ -253,7 +253,35 @@ export default function PricingProposalPage() {
 
         </section>
 
+      <section className="border-t border-black/10 py-24">
+  <Container>
+    <div className="rounded-[32px] border border-black/10 p-10 md:p-16">
+      <p className="mb-4 text-sm uppercase tracking-[0.25em] text-zinc-500">
+        Custom Solutions
+      </p>
 
+      <h2 className="text-4xl md:text-6xl font-medium tracking-tight leading-none">
+        Need Something Custom?
+      </h2>
+
+      <p className="mt-8 max-w-3xl text-xl text-zinc-600">
+        Every real estate business is different. If you need a custom
+        website, brokerage platform, AI automation system, CRM setup,
+        lead generation funnel or complete growth ecosystem, we'll
+        build a solution tailored to your goals.
+      </p>
+
+      <div className="mt-10">
+        <Link
+          href="/contact"
+          className="rounded-full bg-black px-8 py-4 text-white"
+        >
+          Discuss Your Project
+        </Link>
+      </div>
+    </div>
+  </Container>
+</section>
 
         <section className="border-t border-black/10 py-32">
 

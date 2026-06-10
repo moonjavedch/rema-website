@@ -9,17 +9,17 @@ export default function ServicesPage() {
       <Navbar />
 
       <main>
-        <section className="py-32">
+      <section className="pt-36 pb-20 md:pt-44 md:pb-28">
           <Container>
             <p className="mb-6 text-sm uppercase tracking-[0.25em] text-zinc-500">
               Services
             </p>
 
-            <h1 className="max-w-5xl text-5xl md:text-7xl font-medium tracking-tight leading-none">
+            <h1 className="max-w-5xl text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-medium tracking-tight leading-[0.95]">
               The Complete Growth Engine For Modern Realtors And Agencies.
             </h1>
 
-            <p className="mt-10 max-w-3xl text-xl text-zinc-600">
+           <p className="mt-8 max-w-3xl text-lg md:text-xl leading-relaxed text-zinc-600">
               From lead generation and AI automation to websites,
               branding and advertising, REMA builds systems designed
               to help agents and brokerages grow faster.
@@ -27,12 +27,12 @@ export default function ServicesPage() {
           </Container>
         </section>
 
-        <section className="border-t border-black/10 py-32">
+        <section className="border-t border-black/10 py-20 md:py-32">
           <Container>
-            <div className="space-y-24">
+            <div className="space-y-16 md:space-y-24">
               <div>
                 <p className="mb-3 text-zinc-400">01</p>
-                <h2 className="text-4xl font-bold">
+                <h2 className="text-3xl md:text-4xl font-medium tracking-tight">
                   Lead Generation Systems
                 </h2>
                 <p className="mt-4 max-w-3xl text-zinc-600">
@@ -43,7 +43,7 @@ export default function ServicesPage() {
 
               <div>
                 <p className="mb-3 text-zinc-400">02</p>
-                <h2 className="text-4xl font-bold">
+                <h2 className="text-3xl md:text-4xl font-medium tracking-tight">
                   AI Chatbots & Automation
                 </h2>
                 <p className="mt-4 max-w-3xl text-zinc-600">
@@ -54,7 +54,7 @@ export default function ServicesPage() {
 
               <div>
                 <p className="mb-3 text-zinc-400">03</p>
-                <h2 className="text-4xl font-bold">
+                <h2 className="text-3xl md:text-4xl font-medium tracking-tight">
                   Websites & Landing Pages
                 </h2>
                 <p className="mt-4 max-w-3xl text-zinc-600">
@@ -65,7 +65,7 @@ export default function ServicesPage() {
 
               <div>
                 <p className="mb-3 text-zinc-400">04</p>
-                <h2 className="text-4xl font-bold">
+                <h2 className="text-3xl md:text-4xl font-medium tracking-tight">
                   Digital Advertising
                 </h2>
                 <p className="mt-4 max-w-3xl text-zinc-600">
@@ -76,7 +76,7 @@ export default function ServicesPage() {
 
               <div>
                 <p className="mb-3 text-zinc-400">05</p>
-                <h2 className="text-4xl font-bold">
+                <h2 className="text-3xl md:text-4xl font-medium tracking-tight">
                   Branding & Visual Identity
                 </h2>
                 <p className="mt-4 max-w-3xl text-zinc-600">
@@ -87,7 +87,7 @@ export default function ServicesPage() {
 
               <div>
                 <p className="mb-3 text-zinc-400">06</p>
-                <h2 className="text-4xl font-bold">
+                <h2 className="text-3xl md:text-4xl font-medium tracking-tight">
                   Marketing Materials
                 </h2>
                 <p className="mt-4 max-w-3xl text-zinc-600">
@@ -105,7 +105,7 @@ export default function ServicesPage() {
               Why Choose REMA
             </p>
 
-            <h2 className="mb-16 text-5xl font-bold md:text-7xl">
+           <h2 className="mb-12 md:mb-16 text-4xl md:text-6xl lg:text-7xl font-medium tracking-tight leading-[0.95]">
               Built specifically for real estate.
             </h2>
 
@@ -146,7 +146,7 @@ export default function ServicesPage() {
         <section className="border-t border-black/10 py-32">
          <Container>
                     <div className="max-w-5xl">
-                      <h2 className="text-5xl md:text-8xl font-semibold tracking-tight leading-none">
+                     <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-medium tracking-tight leading-[0.95]">
                         Ready to get consistent
                         <br />
                         real estate leads?
@@ -166,7 +166,7 @@ export default function ServicesPage() {
                       <div
                         className="flex flex-wrap items-center"
                         style={{
-                          marginTop: '56px',
+                          marginTop: '40px',
                           gap: '24px',
                         }}
                       >
