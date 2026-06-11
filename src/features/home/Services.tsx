@@ -57,8 +57,11 @@ export default function Services() {
         </div>
 
        <div className="mt-16 md:mt-24 lg:mt-[120px]">
-          {services.map((service) => (
-           <div className="border-t border-black/10 py-10 md:py-14 lg:py-16">
+         {services.map((service) => (
+  <div
+    key={service.title}
+    className="border-t border-black/10 py-10 md:py-14 lg:py-16"
+  >
               <div className="grid gap-8 md:gap-10 lg:grid-cols-[180px_1.2fr_1fr] lg:gap-16">
                 <div>
                  <span className="text-4xl md:text-5xl font-light text-zinc-400">

@@ -8,8 +8,14 @@ export default function ThankYouPage() {
     <>
       <Navbar />
 
-      <main style={{ paddingTop: '40px' }}>
-        <section className="py-32">
+     <main
+  style={{
+    paddingTop: '140px',
+    display: 'block',
+    width: '100%',
+  }}
+>
+       <section className="py-20 md:py-32">
           <Container>
             <div className="max-w-4xl">
               <p className="mb-6 text-sm uppercase tracking-[0.3em] text-zinc-500">
@@ -30,14 +36,14 @@ export default function ThankYouPage() {
               <div className="mt-16 flex flex-wrap gap-4">
                 <Link
                   href="/"
-                  className="rounded-full bg-black px-8 py-4 text-white"
+                  className="rounded-full bg-black px-6 md:px-10 py-4 font-medium text-white transition hover:opacity-90"
                 >
                   Back To Home
                 </Link>
 
                 <Link
   href="/services"
-  className="rounded-full border border-black px-8 py-4 transition hover:bg-black hover:text-white"
+  className="rounded-full border border-black px-6 md:px-10 py-4 font-medium transition hover:bg-black hover:text-white"
 >
   Explore Services
 </Link>
