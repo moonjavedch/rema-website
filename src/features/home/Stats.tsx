@@ -1,5 +1,7 @@
+'use client'
 import Container from "@/components/layout/Container";
-
+import { motion } from "framer-motion";
+import CountUp from "react-countup";
 const stats = [
   {
     value: "340%",
@@ -47,9 +49,53 @@ export default function Stats() {
               key={stat.label}
               className="rounded-3xl border border-black/10 p-8 md:p-12"
             >
-              <div className="mb-4 text-5xl font-light leading-none md:mb-5 md:text-7xl xl:text-[5.5rem]">
-                {stat.value}
-              </div>
+<motion.div
+  initial={{ opacity: 0, y: 30 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  viewport={{ once: true, amount: 0.4 }}
+  transition={{ duration: 0.6 }}
+  className="mb-4 text-5xl font-light leading-none md:mb-5 md:text-7xl xl:text-[5.5rem]"
+>
+  {stat.value === '340%' && (
+    <CountUp
+      start={0}
+      end={340}
+      duration={2.5}
+      suffix="%"
+     
+    />
+  )}
+
+  {stat.value === '68%' && (
+    <CountUp
+      start={0}
+      end={68}
+      duration={2.5}
+      suffix="%"
+     
+    />
+  )}
+
+  {stat.value === '150+' && (
+    <CountUp
+      start={0}
+      end={150}
+      duration={2.5}
+      suffix="+"
+      
+    />
+  )}
+
+  {stat.value === '95%' && (
+    <CountUp
+      start={0}
+      end={95}
+      duration={2.5}
+      suffix="%"
+      
+    />
+  )}
+</motion.div>
 
               <p className="text-lg text-zinc-600 md:text-xl">
                 {stat.label}

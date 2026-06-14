@@ -1,4 +1,7 @@
+'use client'
+
 import Container from '@/components/layout/Container'
+import { motion } from 'framer-motion'
 
 const services = [
   {
@@ -44,7 +47,13 @@ export default function Services() {
     <section className="py-20 md:py-28 lg:py-40">
       <Container>
 
-        <div className="max-w-5xl">
+        <motion.div
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8 }}
+          className="max-w-5xl"
+        >
           <p className="mb-6 text-sm uppercase tracking-[0.3em] text-zinc-500">
             Services
           </p>
@@ -54,34 +63,58 @@ export default function Services() {
             <br />
             a modern real estate business.
           </h2>
-        </div>
+        </motion.div>
 
-       <div className="mt-16 md:mt-24 lg:mt-[120px]">
-         {services.map((service) => (
-  <div
-    key={service.title}
-    className="border-t border-black/10 py-10 md:py-14 lg:py-16"
-  >
+        <div className="mt-16 md:mt-24 lg:mt-[120px]">
+          {services.map((service, index) => (
+            <motion.div
+              key={service.title}
+              initial={{ opacity: 0, y: 60 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.25 }}
+              transition={{
+                duration: 0.8,
+                delay: index * 0.08,
+              }}
+              className="group border-t border-black/10 py-10 transition-all duration-500 hover:bg-zinc-50 md:py-14 lg:py-16"
+            >
               <div className="grid gap-8 md:gap-10 lg:grid-cols-[180px_1.2fr_1fr] lg:gap-16">
-                <div>
-                 <span className="text-4xl md:text-5xl font-light text-zinc-400">
+
+                <motion.div
+                  initial={{ opacity: 0, x: -30 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.6 }}
+                >
+                  <span className="text-4xl font-light text-zinc-300 transition-all duration-500 group-hover:text-black md:text-5xl">
                     {service.number}
                   </span>
-                </div>
+                </motion.div>
 
-                <div>
-                 <h3 className="text-3xl md:text-4xl leading-tight font-medium">
+                <motion.div
+                  initial={{ opacity: 0, x: 30 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.7 }}
+                >
+                  <h3 className="text-3xl leading-tight font-medium transition-all duration-300 group-hover:translate-x-2 md:text-4xl">
                     {service.title}
                   </h3>
-                </div>
+                </motion.div>
 
-                <div>
-                  <p className="max-w-xl text-lg md:text-xl leading-relaxed text-zinc-600">
+                <motion.div
+                  initial={{ opacity: 0, x: 50 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.8 }}
+                >
+                  <p className="max-w-xl text-lg leading-relaxed text-zinc-600 md:text-xl">
                     {service.description}
                   </p>
-                </div>
+                </motion.div>
+
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
 

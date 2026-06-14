@@ -1,4 +1,7 @@
+'use client'
+
 import Container from '@/components/layout/Container'
+import { motion } from 'framer-motion'
 
 const systemSteps = [
   {
@@ -118,68 +121,91 @@ export default function RemaSystem() {
         </div>
 
         <div className="mt-20 md:mt-28 lg:mt-[120px]">
-          {systemSteps.map((step) => (
-            <div
-              key={step.number}
-              className="border-t border-black/10 py-12 md:py-16 lg:py-20"
-            >
+         {systemSteps.map((step, index) => (
+  <motion.div
+    key={step.number}
+    initial={{ opacity: 0, y: 60 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    viewport={{ once: true, amount: 0.2 }}
+    transition={{
+      duration: 0.7,
+      delay: index * 0.08,
+    }}
+    className="group border-t border-black/10 py-12 transition-all duration-500 hover:bg-zinc-50 md:py-16 lg:py-20"
+  >
              <div className="grid gap-8 md:gap-12 lg:grid-cols-[220px_1fr_1.5fr]">
-                <div>
-                  <div className="text-5xl md:text-6xl lg:text-[5rem] leading-none font-light">
-                    {step.number}
-                  </div>
-                </div>
+                <motion.div
+  initial={{ opacity: 0, x: -40 }}
+  whileInView={{ opacity: 1, x: 0 }}
+  viewport={{ once: true }}
+  transition={{ duration: 0.6 }}
+>
+  <div className="text-5xl leading-none font-light text-zinc-300 transition-all duration-500 group-hover:text-black md:text-6xl lg:text-[5rem]">
+  {step.number}
+</div>
+</motion.div>
 
-                <div>
-                  <h3 className="text-3xl md:text-4xl font-medium mb-8">
-                    {step.title}
-                  </h3>
+<motion.div
+  initial={{ opacity: 0, x: 40 }}
+  whileInView={{ opacity: 1, x: 0 }}
+  viewport={{ once: true }}
+  transition={{ duration: 0.7 }}
+>
+  <h3 className="mb-8 text-3xl font-medium transition-all duration-300 group-hover:translate-x-2 md:text-4xl">
+    {step.title}
+  </h3>
 
-                  <div className="space-y-4">
-                    {step.items.map((item) => (
-                      <div
-                        key={item}
-                        className="text-zinc-600"
-                      >
-                        {item}
-                      </div>
-                    ))}
-                  </div>
-                </div>
+  <div className="space-y-4">
+    {step.items.map((item) => (
+      <div
+        key={item}
+        className="text-zinc-600"
+      >
+        {item}
+      </div>
+    ))}
+  </div>
+</motion.div>
 
-                <div>
-                  <p className="max-w-xl text-lg md:text-xl leading-relaxed text-zinc-600">
-                    {step.description}
-                  </p>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
+<motion.div
+  initial={{ opacity: 0, x: 60 }}
+  whileInView={{ opacity: 1, x: 0 }}
+  viewport={{ once: true }}
+  transition={{ duration: 0.8 }}
+>
+  <p className="max-w-xl text-lg md:text-xl leading-relaxed text-zinc-600">
+    {step.description}
+  </p>
+</motion.div>
 
-        <div
-          className="mt-20 border-t border-black/10 pt-12 md:mt-28 md:pt-16 lg:mt-[120px] lg:pt-20"
-        >
-          <div className="max-w-5xl">
-            <h3 className="text-5xl md:text-7xl font-light leading-none">
-              One connected
-              <br />
-              growth system.
-            </h3>
+</div>
+</motion.div>
+))}
+</div>
 
-            <p
-              className="max-w-3xl text-xl leading-relaxed text-zinc-600"
-              style={{ marginTop: '48px' }}
-            >
-              Traffic. Leads. Qualification. Automation.
-              CRM. Sales. Every stage works together to
-              create predictable growth for modern real estate
-              professionals.
-            </p>
-          </div>
-        </div>
+<div
+  className="mt-20 border-t border-black/10 pt-12 md:mt-28 md:pt-16 lg:mt-[120px] lg:pt-20"
+>
+  <div className="max-w-5xl">
+    <h3 className="text-5xl md:text-7xl font-light leading-none">
+      One connected
+      <br />
+      growth system.
+    </h3>
 
-      </Container>
-    </section>
-  )
+    <p
+      className="max-w-3xl text-xl leading-relaxed text-zinc-600"
+      style={{ marginTop: '48px' }}
+    >
+      Traffic. Leads. Qualification. Automation.
+      CRM. Sales. Every stage works together to
+      create predictable growth for modern real estate
+      professionals.
+    </p>
+  </div>
+</div>
+
+</Container>
+</section>
+)
 }

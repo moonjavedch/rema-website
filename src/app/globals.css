@@ -180,3 +180,19 @@ h6 {
   padding-top: 12rem;
   padding-bottom: 12rem;
 }
+
+/* Truested by marquee */
+@keyframes trustedMarquee {
+  from {
+    transform: translateX(0%);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.trusted-marquee {
+  width: max-content;
+  animation: trustedMarquee 28s linear infinite;
+}

@@ -11,24 +11,50 @@ export default function FinalCTA() {
             Ready To Grow?
           </p>
 
-          <h2 className="text-4xl font-light leading-tight md:text-6xl xl:text-7xl">
+          <h2 className="text-5xl md:text-8xl font-semibold tracking-tight leading-none">
             Build a lead generation system
-            <br className="hidden md:block" />
+            
             that works while you sleep.
           </h2>
 
-          <p className="mt-8 max-w-2xl text-lg leading-relaxed text-zinc-600 md:text-xl">
+          <p
+            className="max-w-3xl text-xl leading-relaxed text-zinc-600"
+            style={{
+              marginTop: '48px',
+            }}
+          >
             From targeted advertising to AI-powered qualification, REMA helps
-            real estate professionals generate, nurture, and convert more
-            leads.
+            real estate professionals generate, nurture and convert more
+            qualified leads.
           </p>
 
-          <Link
-            href="/book-call"
-            className="mt-10 inline-block rounded-full border border-black px-8 py-4 transition hover:bg-black hover:text-white"
+          <div
+            className="flex flex-wrap items-center"
+            style={{
+              marginTop: '56px',
+              gap: '24px',
+            }}
           >
-            Book A Strategy Call
-          </Link>
+            <Link
+              href="/book-call"
+              className="rounded-full bg-black font-medium text-white"
+              style={{
+                padding: '18px 40px',
+              }}
+            >
+              Book A Strategy Call
+            </Link>
+
+            <Link
+              href="/ai-assistant"
+              className="rounded-full border border-black font-medium transition hover:bg-black hover:text-white"
+              style={{
+                padding: '18px 40px',
+              }}
+            >
+              Talk To REMA AI
+            </Link>
+          </div>
 
         </div>
       </Container>

@@ -1,3 +1,5 @@
+'use client'
+
 import Container from '@/components/layout/Container'
 
 const brands = [
@@ -12,24 +14,28 @@ const brands = [
 ]
 
 export default function TrustedBy() {
+  const marqueeBrands = [...brands, ...brands]
+
   return (
-    <section className="overflow-hidden border-t border-black/10 py-10 md:py-14">
+    <section className="overflow-hidden border-t border-black/10 py-12 md:py-16">
       <Container>
-        <p className="mb-8 text-center text-xs uppercase tracking-[0.25em] text-zinc-500 md:mb-10 md:text-sm">
+        <p className="mb-10 text-center text-xs uppercase tracking-[0.25em] text-zinc-500 md:text-sm">
           Trusted By Real Estate Professionals
         </p>
+      </Container>
 
-        <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-6 md:gap-x-16 md:gap-y-8">
-          {brands.map((brand) => (
+      <div className="overflow-hidden">
+        <div className="trusted-marquee flex items-center">
+          {marqueeBrands.map((brand, index) => (
             <div
-              key={brand}
-              className="text-base font-medium text-zinc-400 md:text-lg"
+              key={`${brand}-${index}`}
+              className="mx-10 shrink-0 text-lg font-medium text-zinc-400 md:mx-16 md:text-xl"
             >
               {brand}
             </div>
           ))}
         </div>
-      </Container>
+      </div>
     </section>
   )
 }
